@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- This line fixes the random characters -->
+  <meta charset="UTF-8"> 
+  <style>
+    body { width: 300px; padding: 15px; font-family: 'Segoe UI', sans-serif; background: #1a1a1a; color: white; }
+    h2 { margin-top: 0; color: #00ff00; text-align: center; font-size: 18px; }
+    label { font-size: 12px; color: #aaa; display: block; margin-top: 10px; }
+    input { width: 100%; padding: 8px; margin-top: 5px; background: #333; border: 1px solid #444; color: white; border-radius: 4px; box-sizing: border-box;}
+    button { width: 100%; padding: 10px; margin-top: 15px; cursor: pointer; font-weight: bold; border: none; border-radius: 4px; transition: 0.2s; }
+    #btn-save { background: #007bff; color: white; }
+    #btn-save:hover { background: #0056b3; }
+    #status { text-align: center; margin-top: 10px; font-size: 12px; color: #888; }
+    .note { font-size: 10px; color: #666; margin-top: 2px; }
+  </style>
+</head>
+<body>
+  <h2>🎯 SPAWNTRAP CONFIG</h2>
+  
+  <label>Course Code (To find the 'View Slot' button)</label>
+  <input type="text" id="courseCode" placeholder="e.g., BCSE302L">
+
+  <label>Faculty Name(s) (Comma separated)</label>
+  <input type="text" id="facultyNames" placeholder="e.g., Geetha, Sivaraja, Anjali">
+  <div class="note">*Case insensitive. "geetha" finds "GEETHA S"*</div>
+
+  <label>Preferred Slots (Comma separated)</label>
+  <input type="text" id="slots" placeholder="e.g., A1, L49, L50">
+
+  <label style="margin-top: 15px; border-top: 1px solid #333; padding-top: 10px;">Optional: Twilio Settings</label>
+  <input type="password" id="twilioSid" placeholder="Account SID">
+  <input type="password" id="twilioToken" placeholder="Auth Token">
+  <input type="text" id="twilioFrom" placeholder="From (Twilio #)">
+  <input type="text" id="twilioTo" placeholder="To (Your #)">
+
+  <button id="btn-save">💾 SAVE & APPLY</button>
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
