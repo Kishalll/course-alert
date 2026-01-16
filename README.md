@@ -1,6 +1,6 @@
-# SpawnTrap (VTOP Monitor)
+# SpawnTrap (Course Registration Monitor)
 
-SpawnTrap is a Chrome extension designed to assist students with course registration on VTOP. It automates the process of checking for available seats and provides immediate notifications when a slot opens up.
+SpawnTrap is a Chrome extension designed to assist students with course registration on Course Registration. This automates the process of checking for available seats and provides immediate notifications when a slot opens up.
 
 ## Tech Stack
 
@@ -25,12 +25,12 @@ The extension is built to be lightweight and efficient:
 
 1.  **Configuration**:
     *   Click the extension icon in the toolbar.
-    *   Enter the **Course Code** (e.g., `BCSE302L`), **Faculty Name** (e.g., `Sivaraja`), and **Preferred Slots**.
+    *   Enter the **Course Code** (e.g., `BCSE302L`), **Faculty Name** (e.g., `abcd`), and **Preferred Slots**.
     *   (Optional) Configure Twilio settings for SMS alerts.
     *   Click **SAVE & APPLY**.
 
 2.  **Operation**:
-    *   Log in to the VTOP registration portal.
+    *   Log in to the course registration portal.
     *   The SpawnTrap control panel will appear in the bottom right corner.
     *   Navigate to the course list. The tool will automatically locate the course, check the specific faculty, and alert you if a seat is found.
 
